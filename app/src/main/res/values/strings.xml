@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Platform</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Start_button">Start</string>
+    <string name="Federated_Learning">Federated Learning</string>
+    <string name="Model_Partition">Model Partition</string>
+    <string name="Network_Pruning">Network Pruning</string>
+    <string name="Knowledge_Distillation">Knowledge Distillation</string>
+    <string name="FL_name">FL</string>
+    <string name="dataset">Dataset</string>
+    <string name="lr">LearningRate</string>
+    <string name="lr_default">default=0.01</string>
+    <string-array name="dataset">
+        <item>Cifar10</item>
+        <item>Cifar100 </item>
+        <item>Imagenet2012</item>
+    </string-array>
+    <string-array name="model">
+        <item>Resnet18</item>
+        <item>Resnet34 </item>
+        <item>Vgg16</item>
+        <item>Vgg16bn</item>
+    </string-array>
+</resources>
