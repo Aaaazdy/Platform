@@ -42,16 +42,18 @@
             android:id="@+id/editTextTextPersonName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="199dp"
+            android:layout_marginBottom="127dp"
+            android:autofillHints=""
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/lr_default"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btn"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.223"
+            app:layout_constraintHorizontal_bias="0.191"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.29"
-            android:autofillHints="" />
+            app:layout_constraintVertical_bias="0.29" />
 
         <TextView
             android:id="@+id/textView2"
@@ -65,6 +67,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.243" />
+
+        <com.jiang.android.pbutton.CProgressButton
+            android:id="@+id/btn"
+            android:layout_width="106dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginBottom="330dp"
+            android:gravity="center"
+            android:textColor="@color/DoderBlue"
+            android:textSize="25sp"
+            app:color="@color/DoderBlue"
+            app:drawable_xml="@drawable/bounder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+            app:radius="40dp"
+            app:stroke_width="1dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

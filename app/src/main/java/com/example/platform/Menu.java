@@ -17,7 +17,8 @@ import android.widget.Button;
  * Use the {@link Menu#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Menu extends Fragment {
+public class Menu extends Fragment
+{
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,7 +29,8 @@ public class Menu extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Menu() {
+    public Menu()
+    {
         // Required empty public constructor
     }
 
@@ -41,7 +43,8 @@ public class Menu extends Fragment {
      * @return A new instance of fragment Menu.
      */
     // TODO: Rename and change types and number of parameters
-    public static Menu newInstance(String param1, String param2) {
+    public static Menu newInstance(String param1, String param2)
+    {
         Menu fragment = new Menu();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
@@ -51,29 +54,34 @@ public class Menu extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
+        if (getArguments() != null)
+        {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_menu, container, false);
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+    public void onActivityCreated(@Nullable Bundle savedInstanceState)
+    {
         super.onActivityCreated(savedInstanceState);
         Button button2;
         button2 = getView().findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 NavController controller = Navigation.findNavController(v);
                 controller.navigate(R.id.action_menu1_to_f_learning2);
             }
@@ -81,15 +89,16 @@ public class Menu extends Fragment {
 
         Button button3;
         button2 = getView().findViewById(R.id.button3);
-        button2.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 NavController controller = Navigation.findNavController(v);
                 controller.navigate(R.id.action_menu1_to_model_partition);
             }
         });
     }
-
 
 
 }

@@ -13,7 +13,8 @@ import android.view.ViewGroup;
  * Use the {@link f_learning#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class f_learning extends Fragment {
+public class f_learning extends Fragment
+{
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +25,8 @@ public class f_learning extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public f_learning() {
+    public f_learning()
+    {
         // Required empty public constructor
     }
 
@@ -37,7 +39,8 @@ public class f_learning extends Fragment {
      * @return A new instance of fragment f_learning.
      */
     // TODO: Rename and change types and number of parameters
-    public static f_learning newInstance(String param1, String param2) {
+    public static f_learning newInstance(String param1, String param2)
+    {
         f_learning fragment = new f_learning();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
@@ -47,17 +50,19 @@ public class f_learning extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
+        if (getArguments() != null)
+        {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_f_learning, container, false);
     }
