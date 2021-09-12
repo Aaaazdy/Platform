@@ -11,6 +11,7 @@
     <string name="dataset">Dataset</string>
     <string name="lr">LearningRate</string>
     <string name="lr_default">default=0.01</string>
+    <string name="generate">generate</string>
     <string-array name="dataset">
         <item>Cifar10</item>
         <item>Cifar100 </item>

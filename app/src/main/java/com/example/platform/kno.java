@@ -1,23 +1,13 @@
 package com.example.platform;
 
-import android.animation.ValueAnimator;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.jiang.android.pbutton.CProgressButton;
-import android.app.Activity;
-import android.widget.TextView;
-import com.example.platform.MainActivity;
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link f_learning#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class f_learning extends Fragment
+
+import androidx.fragment.app.Fragment;
+
+public class kno extends Fragment
 {
 
     // TODO: Rename parameter arguments, choose names that match
@@ -29,8 +19,7 @@ public class f_learning extends Fragment
     private String mParam1;
     private String mParam2;
 
-    public f_learning()
-    {
+    public kno() {
         // Required empty public constructor
     }
 
@@ -40,12 +29,11 @@ public class f_learning extends Fragment
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment f_learning.
+     * @return A new instance of fragment model_partition.
      */
     // TODO: Rename and change types and number of parameters
-    public static f_learning newInstance(String param1, String param2)
-    {
-        f_learning fragment = new f_learning();
+    public static model_partition newInstance(String param1, String param2) {
+        model_partition fragment = new model_partition();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -54,22 +42,18 @@ public class f_learning extends Fragment
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null)
-        {
+        if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-        MainActivity a=new MainActivity();
-        a.button1();
     }
 
-
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-    {
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_f_learning, container, false);
+        return inflater.inflate(R.layout.fragment_kno, container, false);
     }
 }

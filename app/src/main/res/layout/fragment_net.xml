@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu">
+    tools:context=".net">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,19 +16,17 @@
             android:layout_height="66dp"
             android:background="#009688"
             android:text="@string/Federated_Learning"
-            android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.548"
-            tools:ignore="TextContrastCheck" />
+            app:layout_constraintVertical_bias="0.548" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="253dp"
-            android:layout_height="66dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
             android:text="@string/Model_Partition"
             app:layout_constraintBottom_toTopOf="@+id/guideline4"
             app:layout_constraintEnd_toEndOf="parent"
@@ -38,8 +36,8 @@
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="253dp"
-            android:layout_height="66dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
             android:text="@string/Network_Pruning"
             app:layout_constraintBottom_toTopOf="@+id/guideline5"
             app:layout_constraintEnd_toEndOf="parent"
@@ -50,8 +48,8 @@
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="253dp"
-            android:layout_height="66dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
             android:text="@string/Knowledge_Distillation"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -83,19 +83,41 @@ public class Menu extends Fragment
             public void onClick(View v)
             {
                 NavController controller = Navigation.findNavController(v);
-                controller.navigate(R.id.action_menu1_to_f_learning2);
+                controller.navigate(R.id.action_menu1_to_f_learning);
             }
         });
 
         Button button3;
-        button2 = getView().findViewById(R.id.button3);
-        button2.setOnClickListener(new View.OnClickListener()
+        button3 = getView().findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
                 NavController controller = Navigation.findNavController(v);
                 controller.navigate(R.id.action_menu1_to_model_partition);
+            }
+        });
+        Button button4;
+        button4 = getView().findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                NavController controller = Navigation.findNavController(v);
+                controller.navigate(R.id.action_menu1_to_net);
+            }
+        });
+        Button button5;
+        button5 = getView().findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                NavController controller = Navigation.findNavController(v);
+                controller.navigate(R.id.action_menu1_to_kno);
             }
         });
     }

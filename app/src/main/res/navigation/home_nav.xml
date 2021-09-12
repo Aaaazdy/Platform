@@ -18,18 +18,22 @@
         android:name="com.example.platform.Menu"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" >
+
         <action
-            android:id="@+id/action_menu1_to_home"
-            app:destination="@id/home" />
-        <action
-            android:id="@+id/action_menu1_to_f_learning2"
-            app:destination="@id/f_learning2" />
+            android:id="@+id/action_menu1_to_f_learning"
+            app:destination="@id/f_learning" />
         <action
             android:id="@+id/action_menu1_to_model_partition"
             app:destination="@id/model_partition" />
+        <action
+            android:id="@+id/action_menu1_to_net"
+            app:destination="@id/model_net" />
+        <action
+            android:id="@+id/action_menu1_to_kno"
+            app:destination="@id/model_kno" />
     </fragment>
     <fragment
-        android:id="@+id/f_learning2"
+        android:id="@+id/f_learning"
         android:name="com.example.platform.f_learning"
         android:label="fragment_f_learning"
         tools:layout="@layout/fragment_f_learning" />
@@ -38,4 +42,14 @@
         android:name="com.example.platform.model_partition"
         android:label="fragment_model_partition"
         tools:layout="@layout/fragment_model_partition" />
+    <fragment
+        android:id="@+id/model_net"
+        android:name="com.example.platform.net"
+        android:label="fragment_net"
+        tools:layout="@layout/fragment_net" />
+    <fragment
+        android:id="@+id/model_kno"
+        android:name="com.example.platform.kno"
+        android:label="fragment_kno"
+        tools:layout="@layout/fragment_kno" />
 </navigation>
