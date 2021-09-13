@@ -3,10 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/background3"
     tools:context=".model_partition">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:background="@mipmap/background3"
         android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,21 +21,25 @@
 
             <TextView
                 android:id="@+id/textViewf"
-                android:layout_width="117dp"
-                android:layout_height="29dp"
+                android:layout_width="248dp"
+                android:layout_height="54dp"
+                android:shadowColor="#C62828"
                 android:text="@string/dataset"
-                android:textSize="24sp"
+                android:textColor="#F3F7F9FA"
+                android:textSize="34sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.136"
+                app:layout_constraintHorizontal_bias="0.245"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.088" />
+                app:layout_constraintVertical_bias="0.054" />
 
             <Spinner
                 android:id="@+id/spinnerf"
                 android:layout_width="209dp"
                 android:layout_height="52dp"
+                android:background="#45ECE4E4"
                 android:entries="@array/dataset"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -44,31 +50,54 @@
 
             <TextView
                 android:id="@+id/textViewf2"
-                android:layout_width="157dp"
-                android:layout_height="32dp"
+                android:layout_width="238dp"
+                android:layout_height="45dp"
                 android:text="@string/lr"
-                android:textSize="24sp"
+                android:textColor="#F8F2F2"
+                android:textSize="34sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.157"
+                app:layout_constraintHorizontal_bias="0.231"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.294" />
+                app:layout_constraintVertical_bias="0.279" />
 
             <EditText
                 android:id="@+id/editPersonNamef"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="237dp"
+                android:layout_marginBottom="167dp"
+                android:background="#52FFFFFF"
                 android:ems="10"
                 android:hint="Enter Host Ip"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:scrollbarThumbVertical="@android:drawable/btn_radio"
+                android:textColor="#121111"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/button6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.199"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.346" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="152dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="203dp"
+                android:text="generate"
+                android:textSize="20sp"
+                app:backgroundTint="#A1C62828"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editPersonNamef"
+                tools:ignore="MissingConstraints" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

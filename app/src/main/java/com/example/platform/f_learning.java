@@ -63,7 +63,7 @@ public class f_learning extends Fragment
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         MainActivity a=new MainActivity();
-        a.button1();
+//        a.button1();
     }
 
 

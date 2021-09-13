@@ -1,87 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@mipmap/background5"
+tools:context=".net">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".net">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="253dp"
-            android:layout_height="66dp"
-            android:background="#009688"
-            android:text="@string/Federated_Learning"
-            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        <TextView
+            android:id="@+id/model_select"
+            android:layout_width="257dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginBottom="361dp"
+            android:text="Model:"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/button7"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.259"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.548" />
+            app:layout_constraintVertical_bias="0.067" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="@string/Model_Partition"
-            app:layout_constraintBottom_toTopOf="@+id/guideline4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline3" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="@string/Network_Pruning"
-            app:layout_constraintBottom_toTopOf="@+id/guideline5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline4"
-            app:layout_constraintVertical_bias="0.503" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="@string/Knowledge_Distillation"
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="209dp"
+            android:layout_height="52dp"
+            android:background="#45ECE4E4"
+            android:entries="@array/model"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.198"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline5"
-            app:layout_constraintVertical_bias="0.492" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.134" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+        <TextView
+            android:id="@+id/host_ip"
+            android:layout_width="257dp"
+            android:layout_height="43dp"
+            android:text="HOST IP:"
+            android:textColor="#F8F2F2"
+            android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintGuide_begin="158dp"
-            app:layout_constraintGuide_percent="0.25" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.259"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.281" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="353dp"
-            app:layout_constraintGuide_percent="0.5" />
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="232dp"
+            android:layout_height="48dp"
+            android:background="#52FFFFFF"
+            android:ems="10"
+            android:hint="Enter Host Ip"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.223"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.341" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="566dp"
-            app:layout_constraintGuide_percent="0.75" />
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="152dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="203dp"
+            android:text="generate"
+            android:textSize="20sp"
+            app:backgroundTint="#A1C62828"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/model_select"
+            tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

@@ -6,12 +6,13 @@
         <entry key="..\:/ProgramFiles/Platform/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1962962962962963" />
         <entry key="..\:/ProgramFiles/Platform/app/src/main/res/drawable/bounder.xml" value="0.1" />
         <entry key="..\:/ProgramFiles/Platform/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1962962962962963" />
+        <entry key="..\:/ProgramFiles/Platform/app/src/main/res/layout-v21/fragment_menu.xml" value="0.3333333333333333" />
         <entry key="..\:/ProgramFiles/Platform/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/ProgramFiles/Platform/app/src/main/res/layout/fragment_f_learning.xml" value="0.3886138613861386" />
+        <entry key="..\:/ProgramFiles/Platform/app/src/main/res/layout/fragment_f_learning.xml" value="0.30434782608695654" />
         <entry key="..\:/ProgramFiles/Platform/app/src/main/res/layout/fragment_home.xml" value="0.3333333333333333" />
         <entry key="..\:/ProgramFiles/Platform/app/src/main/res/layout/fragment_kno.xml" value="0.21105072463768115" />
         <entry key="..\:/ProgramFiles/Platform/app/src/main/res/layout/fragment_menu.xml" value="0.3333333333333333" />
-        <entry key="..\:/ProgramFiles/Platform/app/src/main/res/layout/fragment_model_partition.xml" value="0.1" />
+        <entry key="..\:/ProgramFiles/Platform/app/src/main/res/layout/fragment_model_partition.xml" value="0.3333333333333333" />
         <entry key="..\:/ProgramFiles/Platform/app/src/main/res/layout/fragment_net.xml" value="0.21105072463768115" />
       </map>
     </option>
